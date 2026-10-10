@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders | ChopSmart</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/data.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/cart.js" defer></script>
+    <script src="js/orders.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+        <a href="index.html" class="logo">Chop<span>Smart</span></a>
+
+        <button class="menu-toggle" type="button"
+                aria-label="Toggle navigation"
+                aria-expanded="false">☰</button>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vendors.html">Vendors</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="meal-builder.html">Meal Builder</a></li>
+            <li><a href="cart.html">Cart <span class="cart-count">0</span></a></li>
+            <li><a href="orders.html" class="active">My Orders</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="page-banner">
+        <div class="container">
+            <span class="eyebrow">YOUR FOOD JOURNEY</span>
+            <h1>My Orders</h1>
+            <p>Review your previous ChopSmart orders and spending.</p>
+        </div>
+    </section>
+
+    <section class="section container">
+
+        <div class="orders-heading">
+            <div>
+                <span class="eyebrow">ORDER HISTORY</span>
+                <h2>Your Previous Orders</h2>
+                <p id="orders-count">Loading orders...</p>
+            </div>
+
+            <a href="menu.html" class="btn btn-primary">
+                Order More Food →
+            </a>
+        </div>
+
+        <div class="orders-stats">
+            <div class="orders-stat-card">
+                <span>Total Orders</span>
+                <strong id="total-orders">0</strong>
+            </div>
+
+            <div class="orders-stat-card">
+                <span>Total Spent</span>
+                <strong id="total-spent">GHS 0.00</strong>
+            </div>
+
+            <div class="orders-stat-card">
+                <span>Meals Ordered</span>
+                <strong id="total-meals">0</strong>
+            </div>
+        </div>
+
+        <div id="orders-list" class="orders-list"></div>
+
+        <div id="orders-empty" class="empty-state" hidden>
+            <h3>No orders yet!</h3>
+            <p>Your order history will appear here after checkout.</p>
+            <a href="menu.html" class="btn btn-primary">
+                Explore Menu →
+            </a>
+        </div>
+
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-content">
+        <strong>ChopSmart</strong>
+        <p>Eat smart. Spend smart. Built for campus life.</p>
+        <small>© 2026 ChopSmart. Student synthesis project.</small>
+    </div>
+</footer>
+
+</body>
+</html>

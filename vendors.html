@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Vendors | ChopSmart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/data.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a href="index.html" class="logo">Chop<span>Smart</span></a>
+
+            <button class="menu-toggle" type="button"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">☰</button>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vendors.html" class="active">Vendors</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="meal-builder.html">Meal Builder</a></li>
+                <li><a href="cart.html">Cart <span class="cart-count">0</span></a></li>
+                <li><a href="orders.html">My Orders</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <div class="container">
+                <span class="eyebrow">DISCOVER CAMPUS FOOD</span>
+                <h1>Explore Food Vendors</h1>
+                <p>
+                    Find your next favorite meal from our selection
+                    of campus-inspired food vendors.
+                </p>
+            </div>
+        </section>
+
+        <section class="section container">
+
+            <div class="vendor-toolbar">
+                <div class="search-wrapper">
+                    <label for="vendor-search">Search vendors</label>
+                    <input
+                        type="search"
+                        id="vendor-search"
+                        placeholder="Search by vendor name or food..."
+                    >
+                </div>
+
+                <div class="filter-wrapper">
+                    <label for="vendor-category">Food category</label>
+                    <select id="vendor-category">
+                        <option value="all">All Categories</option>
+                        <option value="Local Dishes">Local Dishes</option>
+                        <option value="Rice Meals">Rice Meals</option>
+                        <option value="Snacks">Snacks</option>
+                        <option value="Healthy Meals">Healthy Meals</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="vendor-results">
+                <h2>Available Vendors</h2>
+                <p id="vendor-count" aria-live="polite"></p>
+            </div>
+
+            <div id="vendor-grid" class="vendor-grid">
+                <!-- JavaScript will display vendor cards here -->
+            </div>
+
+            <p id="vendor-empty" class="empty-state" hidden>
+                No vendors match your search. Try another name or category.
+            </p>
+
+        </section>
+
+        <section class="section section-soft">
+            <div class="container vendor-cta">
+                <div>
+                    <span class="eyebrow">NEED HELP CHOOSING?</span>
+                    <h2>Let your budget decide.</h2>
+                    <p>
+                        Our Smart Meal Builder helps you discover
+                        delicious meals within your spending limit.
+                    </p>
+                </div>
+
+                <a href="meal-builder.html" class="btn btn-primary">
+                    Try Smart Meal Builder →
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <strong>ChopSmart</strong>
+            <p>Eat smart. Spend smart. Built for campus life.</p>
+            <small>© 2026 ChopSmart. Student synthesis project.</small>
+        </div>
+    </footer>
+
+</body>
+</html>

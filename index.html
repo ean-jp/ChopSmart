@@ -1,0 +1,436 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ChopSmart | Eat Smart. Spend Smart.</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/data.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ======================================
+         NAVIGATION
+    ====================================== -->
+
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+
+            <a href="index.html" class="logo">
+                Chop<span>Smart</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="vendors.html">Vendors</a>
+                </li>
+                <li>
+                    <a href="menu.html">Menu</a>
+                </li>
+                <li>
+                    <a href="meal-builder.html">Meal Builder</a>
+                </li>
+                <li>
+                    <a href="cart.html">
+                        Cart <span class="cart-count">0</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="orders.html">My Orders</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- ======================================
+             HERO SECTION
+        ====================================== -->
+
+        <section class="hero">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <span class="eyebrow">
+                        YOUR CAMPUS FOOD COMPANION
+                    </span>
+
+                    <h1>
+                        Good food.<br>
+                        <span>Smarter spending.</span>
+                    </h1>
+
+                    <p>
+                        Discover delicious campus meals,
+                        explore food vendors, and find the
+                        perfect meal for your budget.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a
+                            href="meal-builder.html"
+                            class="btn btn-primary"
+                        >
+                            Build My Meal →
+                        </a>
+
+                        <a
+                            href="menu.html"
+                            class="btn btn-outline"
+                        >
+                            Explore Menu
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- HERO FOOD PHOTOGRAPH -->
+
+                <div
+                    class="hero-visual"
+                    aria-label="Featured Ghanaian meal"
+                >
+
+                    <div class="hero-food-photo">
+
+                        <img
+                            src="images/jollof-chicken.jpg"
+                            alt="Delicious Jollof Rice and Chicken"
+                            class="hero-image"
+                        >
+
+                    </div>
+
+                    <div class="floating-label">
+                        <span>✨ Smart picks</span>
+                        <strong>Made for your budget</strong>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ======================================
+             WHY CHOPSMART
+        ====================================== -->
+
+        <section class="section container">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">
+                        WHY CHOPSMART?
+                    </span>
+
+                    <h2>
+                        Everything you need to eat better
+                    </h2>
+                </div>
+            </div>
+
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">💰</div>
+
+                    <h3>Budget-friendly meals</h3>
+
+                    <p>
+                        Find delicious food options that
+                        fit your spending limit.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">🍽️</div>
+
+                    <h3>Explore campus food</h3>
+
+                    <p>
+                        Discover meals from different
+                        campus food vendors.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">🛒</div>
+
+                    <h3>Easy ordering</h3>
+
+                    <p>
+                        Build your cart, review your order,
+                        and check out in minutes.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             FEATURED CAMPUS MEALS
+        ====================================== -->
+
+        <section class="section section-soft">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="eyebrow">
+                            CAMPUS FAVORITES
+                        </span>
+
+                        <h2>
+                            Craving something delicious?
+                        </h2>
+                    </div>
+
+                    <a href="menu.html" class="text-link">
+                        View full menu →
+                    </a>
+
+                </div>
+
+
+                <div class="meal-grid">
+
+                    <!-- FEATURED MEAL 1 -->
+
+                    <article class="meal-card">
+
+                        <div class="meal-art">
+
+                            <img
+                                src="images/jollof-chicken.jpg"
+                                alt="Jollof Rice and Chicken"
+                                class="food-photo"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="meal-details">
+
+                            <span class="meal-tag">
+                                Popular
+                            </span>
+
+                            <h3>Jollof Rice & Chicken</h3>
+
+                            <p>
+                                A flavorful campus classic.
+                            </p>
+
+                            <div class="meal-bottom">
+
+                                <strong>GHS 45.00</strong>
+
+                                <a
+                                    href="menu.html?vendor=2"
+                                    class="small-btn"
+                                >
+                                    Explore →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- FEATURED MEAL 2 -->
+
+                    <article class="meal-card">
+
+                        <div class="meal-art">
+
+                            <img
+                                src="images/waakye.jpg"
+                                alt="Waakye served with Egg"
+                                class="food-photo"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="meal-details">
+
+                            <span class="meal-tag">
+                                Student favorite
+                            </span>
+
+                            <h3>Waakye & Egg</h3>
+
+                            <p>
+                                A filling meal for busy days.
+                            </p>
+
+                            <div class="meal-bottom">
+
+                                <strong>GHS 30.00</strong>
+
+                                <a
+                                    href="menu.html?vendor=1"
+                                    class="small-btn"
+                                >
+                                    Explore →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- FEATURED MEAL 3 -->
+
+                    <article class="meal-card">
+
+                        <div class="meal-art">
+
+                            <img
+                                src="images/kelewele.jpg"
+                                alt="Spicy Kelewele and Groundnuts"
+                                class="food-photo"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="meal-details">
+
+                            <span class="meal-tag">
+                                Affordable
+                            </span>
+
+                            <h3>Kelewele & Groundnuts</h3>
+
+                            <p>
+                                Sweet, spicy, and satisfying.
+                            </p>
+
+                            <div class="meal-bottom">
+
+                                <strong>GHS 20.00</strong>
+
+                                <a
+                                    href="menu.html?vendor=3"
+                                    class="small-btn"
+                                >
+                                    Explore →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             SMART MEAL BUILDER CTA
+        ====================================== -->
+
+        <section class="section container">
+
+            <div class="cta-panel">
+
+                <span class="eyebrow">
+                    SMART MEAL BUILDER
+                </span>
+
+                <h2>
+                    Only have GHS 50 for lunch?
+                </h2>
+
+                <p>
+                    Tell ChopSmart your budget and discover
+                    meals you can afford without the guesswork.
+                </p>
+
+                <a
+                    href="meal-builder.html"
+                    class="btn btn-primary"
+                >
+                    Find My Perfect Meal →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ======================================
+         FOOTER
+    ====================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <strong>ChopSmart</strong>
+
+            <p>
+                Eat smart. Spend smart.
+                Built for campus life.
+            </p>
+
+            <small>
+                © 2026 ChopSmart.
+                Student synthesis project.
+            </small>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

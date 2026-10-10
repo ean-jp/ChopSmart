@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Meal Builder | ChopSmart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/data.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/cart.js" defer></script>
+    <script src="js/meal-builder.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+        <a href="index.html" class="logo">Chop<span>Smart</span></a>
+
+        <button class="menu-toggle" type="button"
+                aria-label="Toggle navigation"
+                aria-expanded="false">☰</button>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vendors.html">Vendors</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="meal-builder.html" class="active">Meal Builder</a></li>
+            <li><a href="cart.html">Cart <span class="cart-count">0</span></a></li>
+            <li><a href="orders.html">My Orders</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="page-banner">
+        <div class="container">
+            <span class="eyebrow">EAT SMART. SPEND SMART.</span>
+            <h1>Smart Meal Builder</h1>
+            <p>
+                Tell us how much you want to spend, and we'll help
+                you discover delicious meals within your budget.
+            </p>
+        </div>
+    </section>
+
+    <section class="section container">
+
+        <div class="builder-layout">
+
+            <div class="builder-panel">
+                <span class="eyebrow">PERSONALIZE YOUR MEAL</span>
+                <h2>What's your budget?</h2>
+                <p>
+                    Enter your spending limit and choose your
+                    preferences to get personalized meal suggestions.
+                </p>
+
+                <form id="meal-builder-form">
+
+                    <div class="builder-field">
+                        <label for="budget">Your budget (GHS)</label>
+                        <input
+                            type="number"
+                            id="budget"
+                            min="1"
+                            step="0.01"
+                            placeholder="e.g. 50"
+                            required
+                        >
+                    </div>
+
+                    <div class="builder-field">
+                        <label for="builder-category">Food preference</label>
+                        <select id="builder-category">
+                            <option value="all">Any food category</option>
+                            <option value="Local Dishes">Local Dishes</option>
+                            <option value="Rice Meals">Rice Meals</option>
+                            <option value="Snacks">Snacks</option>
+                            <option value="Healthy Meals">Healthy Meals</option>
+                        </select>
+                    </div>
+
+                    <div class="builder-field">
+                        <label for="builder-priority">What's most important?</label>
+                        <select id="builder-priority">
+                            <option value="value">Get the most from my budget</option>
+                            <option value="save">Spend as little as possible</option>
+                            <option value="variety">Try different foods</option>
+                        </select>
+                    </div>
+
+                    <button type="submit"
+                            class="btn btn-primary builder-submit">
+                        Find My Meals →
+                    </button>
+                </form>
+            </div>
+
+            <div class="builder-info">
+                <div class="builder-info-icon">✨</div>
+                <h2>Smarter choices, happier meals.</h2>
+                <p>
+                    ChopSmart explores available food combinations
+                    and recommends options based on your budget.
+                </p>
+
+                <div class="builder-info-list">
+                    <div>✓ Stay within your spending limit</div>
+                    <div>✓ Discover affordable combinations</div>
+                    <div>✓ Compare remaining balances</div>
+                    <div>✓ Add suggestions to your cart</div>
+                </div>
+            </div>
+        </div>
+
+        <section id="builder-results"
+                 class="builder-results"
+                 aria-live="polite"
+                 hidden>
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">YOUR PERSONALIZED PICKS</span>
+                    <h2>Recommended for You</h2>
+                    <p id="builder-summary"></p>
+                </div>
+            </div>
+
+            <div id="recommendation-grid"
+                 class="recommendation-grid">
+            </div>
+
+            <p id="builder-empty"
+               class="empty-state"
+               hidden>
+                No meals match your budget and preference.
+                Try increasing your budget or choosing another category.
+            </p>
+        </section>
+
+        <p id="builder-notification"
+           class="cart-notification"
+           role="status"
+           aria-live="polite"></p>
+
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-content">
+        <strong>ChopSmart</strong>
+        <p>Eat smart. Spend smart. Built for campus life.</p>
+        <small>© 2026 ChopSmart. Student synthesis project.</small>
+    </div>
+</footer>
+
+</body>
+</html>
